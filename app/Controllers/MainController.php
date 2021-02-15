@@ -23,4 +23,19 @@ class MainController
 
         return;
     }
+    public function getLuan($data)
+    {
+        $result = [
+            "data" => [
+                [
+                    "id"=> null,
+                    "name"=> "Lio"
+                ]
+            ]
+        ];
+
+        echo json_encode($result);
+
+        return;
+    }
 }

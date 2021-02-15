@@ -21,13 +21,17 @@ $router->get("/", function ($data) {
     echo json_encode($result);
 });
 
+
+
 $router->namespace("App\\Controllers");
+
+$router->get("/luan", "MainController:getLuan");
 
 $router->get("/get/{id}", "MainController:getData");
 
 
 $router->get('/404', function ($data) {
-    echo "NOT FOUND";
+    echo "NOT FOUND MESSI";
 });
 
 $router->dispatch();
